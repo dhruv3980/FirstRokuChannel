@@ -1,0 +1,8 @@
+<component name="playlistTaskNode" extends="Task">
+    <script type="text/brightscript" uri="pkg:/components/playlistNode.brs" />
+    <interface>
+        <field id="responseData" type="assocarray" />
+        <field id="enveuPlaylistId" type="string" />
+
+    </interface>
+</component>

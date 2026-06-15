@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="Checkentitlementsecond" extends="Task">
+    <script type="text/brightscript" uri="pkg:/components/checksecondentitlementNode.brs" />
+    <interface>
+        <field id="responseData" type="roAssociativeArray" />
+        <field id="sku" type="string"/>
+    </interface>
+</component>

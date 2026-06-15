@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <children>
+       <Group id="wholeScene">
+        <Label id="title"  text ="Loading...."  visible="true"/>
+         <Group id="sidelistgroup">
+         <Rectangle width="1920" height="1080" color="#2D2D2D"/>
+        <Rectangle id="background" width="370" height="1080" color="RGBA(251,250,250,1)" />
+        <MarkupList 
+        id ="sidebar"
+        translation="[0,100]"
+        itemComponentName="sideBarItem"
+        
+        itemSize="[335, 60]" 
+        vertFocusAnimationStyle="floatingFocus"
+        numRows="10" 
+        itemSpacing="[0,20]"
+
+        />
+
+        
+        </Group>
+       
+       <Group id="mainpostergroup">
+        <Poster
+        id="mainPoster"
+        translation="[370,0]"
+        width="1750"
+        height="1080"
+        visible="false" />
+        <Button id="watchButton" showFocusFootprint="true" iconUri="" focusedIconUri="" translation="[500,800]"
+            focusBitmapUri="pkg:/images/exitFocus.png"
+            focusFootprintBitmapUri="pkg:/images/exitUnfocus.9.png" width="200" height="90">
+            <Label id="watchButtonText" text="Watch Now" translation="[90,30]" />
+        </Button>
+        </Group>
+    <Group id="groupid"  >
+        
+        <LayoutGroup translation="[100,50]" layoutDirection="vert" id="layout" itemSpacings="[20]" >
+            <Label id="sidetext" font="font:MediumBoldSystemFont" color="#FFFFFF"  />
+            <Label id="sidedescription" height="500" width="700"  wrap="true" color="#ddd5d5"/>
+        </LayoutGroup>
+        <Poster id="sideposter" height="561" width="800" translation="[1120,0]"/>
+        <Poster id="sideposter2" height="561"  translation="[1120,0]" uri="pkg:/images/image.png" visible="false"/>
+        <Poster id="sideposter3" width="800"  translation="[1120,329]" uri="pkg:/images/shadowDown.png" visible="false"/>
+        <RowList
+    id="homeRowList"
+    translation="[100,600]"
+    itemSize="[1700, 250]"
+    itemSpacing="[30,30]"
+    
+    numRows="2"
+   
+    vertFocusAnimationStyle="fixedFocus"
+    showRowLabel="[true]"
+    rowLabelOffset="[[0,20]]"
+     
+    rowItemSpacing="[[20,0]]"
+   itemComponentName ="rowItem" 
+    rowItemSize="[[362,204]]"
+    visible="false"
+    
+    
+    />
+
+    
+
+
+  
+
+
+
+
+    </Group>
+    <Rectangle id="listbackground1" width="462" height="267" color="#ffffff" visible="false" translation="[409,259]"/>
+    <Rectangle id="listBackground" 
+    translation="[410,260]"
+    width="460" height="265" color="#000000"  visible="false" >
+
+
+    <MarkupList
+  id="listMenu"
+  translation="[60,20]"
+    itemSize="[335, 60]" 
+    itemSpacing="[0,20]"
+    vertFocusAnimationStyle="floatingFocus"
+  
+    itemComponentName="listNode">
+   </MarkupList>
+
+
+   </Rectangle>
+   <Rectangle id="listBackground2" 
+    translation="[1119,259]"
+    width="512" height="352" color="#ffffff"  visible="false" />
+
+
+   <Rectangle id="descriptionbox" width="510" height="350" color="#000000" visible="false" translation="[1120,260]">
+
+    <LayoutGroup id="profile" visible="false" layoutDirection="vert" itemSpacings="[40]" translation="[20,52]">
+        <Label id="nameLabel"/>
+        <Label id="emailLabel"/>
+        <Label id="phoneLabel"/>
+
+
+    </LayoutGroup>
+
+    <LayoutGroup id="privacy" visible="false" layoutDirection="vert" translation="[17,30]">
+        <Label id="privacyTitle" width="440" height="350"  wrap="true"/>
+       
+    </LayoutGroup>  
+
+    <LayoutGroup id="help" visible="false" layoutDirection="vert" translation="[17,30]" >
+        <Label id="helpUrl" width="440" height="350" wrap="true"   />
+        
+    </LayoutGroup>
+
+   </Rectangle>
+
+   </Group>
+
+   <Video id="videoPlayer" width="1920" height="1080" translation="[0,0]" visible="false" />
+
+    <Video id="videoPlayer1" width="1920" height="1080" translation="[0,0]" visible="false" />
+
+        <!-- <RowList
+     id="playlistRowList"
+    translation="[400,500]"
+    itemSize="[1500, 250]"
+    itemSpacing="[30,30]"   
+    numRows="3"
+    vertFocusAnimationStyle="floatingFocus"
+    showRowLabel="[true]"
+    rowLabelOffset="[[0,20]]"
+    rowItemSpacing="[[20,0]]"
+    itemComponentName ="rowItem"
+    rowItemSize="[[362,204]]"
+    visible ="false"
+    /> -->
+        <TaskNode id="TaskNode"  />
+        <HomeNode id="homeNode" />
+        <PlaylistTaskNode id="playlistTaskNode" />
+        <LivelistTaskNode id="livelistTaskNode"/>
+        <PlayerTaskNode id="playerTaskNode"/>
+        <Checkentitlement id="checkentitlement"/>
+        <Checkentitlementsecond id = "checkesecondentitlement"/>
+        <PlayerTaskSecondNode id = "playerTaskSecondNode"/>
+        
+    </children>
+</component>

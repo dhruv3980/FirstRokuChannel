@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="CustomContentNode" extends="ContentNode">
+    <interface>
+        <field id="title" type="string" />
+        <field id="description" type="string" />
+        <field id="image" type="string" />
+        <field id = "Name" type="string"/>
+        <field id="Email" type="string"/>
+        <field id="Phone" type="string"/>
+        <field id="sku" type="string" />
+        <field id="premium" type="string"/>
+        <field id ="contentid" type ="string"/>
+
+         <field id="id" type="string" />
+         <field id="thumbnail" type="string" />
+         <field id="menuType" type="string" />
+    </interface>
+</component>

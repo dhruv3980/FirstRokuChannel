@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="listNode" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/listnode.brs" />
+    <interface>
+        <field id="itemContent" type="node" onChange = "dataChanged" />
+        <field id="focusPercent" type="float" onChange="onFocusChanged" />
+        <field id="listHasFocus" type="boolean" onChange="onFocusChanged" />
+        <field id="itemHasFocus" type="boolean" onChange="onFocusChanged" />
+    </interface>
+    <children>
+        <LayoutGroup id="layout"   layoutDirection="horizontal"  translation="[15,20]" itemSpacings="[17,0]">
+        
+        <Label id="label" height="70" width="280" font="font:SmallestSystemFont" />
+        </LayoutGroup>
+    </children>
+</component>    

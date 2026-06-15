@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="playerTaskNode" extends="Task">
+    <script type="text/brightscript" uri="pkg:/components/playerTaskNode.brs" />
+    <interface>
+        <field id="responseData" type="assocarray" />
+        <field id="sku" type="string"/>
+        <field id="token" type="string"/>
+    </interface>
+</component>

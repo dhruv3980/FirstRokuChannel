@@ -1,0 +1,8 @@
+<component name="homeNode" extends="Task">
+    <script type="text/brightscript" uri="pkg:/components/HomeNode.brs" />
+    <interface>
+        <field id="responseData" type="assocarray" />
+        <field id="screenId" type="string" />
+
+    </interface>
+</component>
